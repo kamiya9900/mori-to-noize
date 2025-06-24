@@ -26,7 +26,7 @@ GitHub Pages を利用して、世界中からアクセス可能な Web サイ�
 
 ## 🌐 公開URL（GitHub Pages）
 
-▶ [https://kamiya9900.github.io/HP_mimurasarujiro/](https://kamiya9900.github.io/HP_mimurasarujiro/)  
+▶ 現在未公開設定中[https://kamiya9900.github.io/HP_mimurasarujiro/](https://kamiya9900.github.io/HP_mimurasarujiro/)  
 （※このリンクは公開後、ブラウザでアクセスできます）
 
 ---
