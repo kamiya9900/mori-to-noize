@@ -1,9 +1,11 @@
 body {
   font-family: sans-serif;
-  background-color: #f0f0f0;
+  background-color: #d900ffc7;
   text-align: center;
   padding: 3em;
 }
 h1 {
-  color: #3333cc;
+  color: #8f8fdb
+  font-size: 1.5em;
+  font-weight: bold;
 }
