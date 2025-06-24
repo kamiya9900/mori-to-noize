@@ -1,5 +1,4 @@
 # HP_mimurasarujiro
-# HP_mimurasarujiro
 
 このプロジェクトは、**今後自作の絵や音楽を upload するために作成したホームページ**です。  
 GitHub Pages を利用して、世界中からアクセス可能な Web サイトとして公開されています。
