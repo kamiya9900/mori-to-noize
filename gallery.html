@@ -31,28 +31,38 @@
       }
     </style>
   </head>
-<body>
-  <!-- ✅ 共通ヘッダー -->
-  <div id="header"></div>
+  <body>
+    <!-- ✅ 共通ヘッダー -->
+    <div id="header"></div>
 
-  <main class="main">
-    <h1>mimurasarujiro 展覧会</h1>
+    <main class="main">
+      <h1>mimurasarujiro 展覧会</h1>
 
-    <div class="artworks">
-      <div class="work">
-        <h2>秋香る不審者</h2>
-        <img src="gallery/akikaorufushinsha.png" alt="秋香る不審者" />
+      <div class="artworks">
+        <div class="work">
+          <h2>秋香る不審者</h2>
+          <img src="gallery/akikaorufushinsha.png" alt="秋香る不審者" />
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <!-- ✅ header.html 読み込みスクリプト -->
-  <script>
-    fetch("header.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("header").innerHTML = html;
-      });
-  </script>
+    <!-- ✅ header.html 読み込みスクリプト -->
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        });
+    </script>
+    <div id="footer"></div>
+
+    <!-- ✅ フッターのfetch -->
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    </script>
   </body>
 </html>

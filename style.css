@@ -134,6 +134,26 @@ body {
   height: 60px;
 }
 
+.site-footer {
+  background-color: #4c6e4c;
+  color: #fefbe9;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+.site-footer a {
+  color: #fefbe9;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+
 
 /* スマホ対応 */
 @media (max-width: 600px) {
