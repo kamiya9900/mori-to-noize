@@ -103,12 +103,12 @@ body {
 .lightning::after {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 1px;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 20px 5px 0 5px;
+  border-width: 20px 5px 10px 5px;
   border-color: #ffd600 transparent transparent transparent;
   transform: skewX(2deg);
 }
