@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coming Soon | 森とノイズ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+  <style>
+    .coming-soon {
+      text-align: center;
+      font-size: 2rem;
+      color: #3c4b35;
+      margin-top: 6rem;
+      font-family: 'Kiwi Maru', cursive;
+    }
+  </style>
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="main">
+    <div class="coming-soon">Coming Soon...</div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header").innerHTML = html;
+      });
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("footer").innerHTML = html;
+      });
+  </script>
+</body>
+</html>
