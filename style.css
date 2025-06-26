@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fefbe9;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   color: #2e432b;
 }
@@ -12,7 +12,7 @@ body {
 }
 
 .title-area {
-  width: 100%; 
+  width: 100%;
   margin: 0;
   padding: 2rem 0 0 0; /* 上だけ余白、左右余白なし */
   background-color: transparent;
@@ -21,12 +21,12 @@ body {
 
 /* タイトル文字列の設定 */
 .title {
-  width: 100%;  /* ← 100vw だとはみ出ることがある */
+  width: 100%; /* ← 100vw だとはみ出ることがある */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.6rem;
-  font-family: 'Kiwi Maru', cursive;
+  font-family: "Kiwi Maru", cursive;
   font-size: clamp(2.5rem, 6vw, 5rem);
   flex-wrap: wrap;
   position: relative;
@@ -60,7 +60,6 @@ body {
   position: relative;
 }*/
 
-
 /* メニューリンク */
 .menu {
   margin-top: 4rem;
@@ -71,7 +70,7 @@ body {
 }
 
 .menu a {
-  font-family: 'Kiwi Maru', cursive;
+  font-family: "Kiwi Maru", cursive;
   color: #3c4b35;
   padding: 0.6rem 1.6rem;
   border: 2px solid #7a8b64;
@@ -129,7 +128,7 @@ body {
 
 .tree {
   position: absolute;
-  top: 20px;   /* 丘の上にちょこんと表示される */
+  top: 20px; /* 丘の上にちょこんと表示される */
   width: 40px;
   height: 60px;
 }
@@ -153,7 +152,33 @@ body {
   text-decoration: underline;
 }
 
+/* 木を風で揺らすアニメーション */
+.leaf-sway {
+  animation: leaf-sway 1.3s ease-in-out infinite;
+  transform-origin: center;
+  animation: leaf-sway 4.4s ease-in-out infinite;
+  transform-origin: center;
+  animation: leaf-sway 7.4s ease-in-out infinite;
+  transform-origin: center;
+}
 
+@keyframes leaf-sway {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-1.5px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(1.0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 
 /* スマホ対応 */
 @media (max-width: 600px) {
