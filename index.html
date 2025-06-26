@@ -1,89 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>森とノイズ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-</head>
-<body>
-  <main class="main">
-    <section class="title-area">
-      <div class="title">
-        <span class="mori">森</span>
-        <span class="to">と</span>
-        <span class="noise">ノイズ</span>
-        <span class="lightning"></span>
-      </div>
-<!-- 森レイヤー -->
-<div class="forest-bg">
-  <!-- 丘の曲線 -->
-  <svg viewBox="0 0 1200 150" preserveAspectRatio="none">
-    <path d="M0,100 C200,60 400,140 600,100 C800,60 1000,120 1200,100 L1200,150 L0,150 Z" fill="#4c6e4c" />
-  </svg>
+  <head>
+    <meta charset="UTF-8" />
+    <title>森とノイズ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main class="main">
+      <script>
+        fetch("header.html")
+          .then((res) => res.text())
+          .then((html) => {
+            document.getElementById("header").innerHTML = html;
+          });
+      </script>
 
-
-<!-- 🌳 10本の木を追加  topとleftを後で修正必要 -->
-<svg class="tree" style="left: 5%; top: 50px; transform: scale(0.9);">
-  <circle cx="20" cy="30" r="15" fill="#3e6b41"/>
-  <rect x="18" y="40" width="4" height="20" fill="#5c4327"/>
-</svg>
-
-<svg class="tree" style="left: 10%; top: 40px; transform: scale(1.1);">
-  <circle cx="20" cy="30" r="15" fill="#3e6b41"/>
-  <rect x="18" y="40" width="4" height="20" fill="#5c4327"/>
-</svg>
-
-<svg class="tree" style="left: 17%; top: 42px; transform: scale(0.85);">
-  <circle cx="20" cy="30" r="15" fill="#3e6b41"/>
-  <rect x="18" y="40" width="4" height="20" fill="#5c4327"/>
-</svg>
-
-<svg class="tree" style="left: 24%; top: 50px; transform: scale(1.0);">
-  <circle cx="20" cy="30" r="15" fill="#3e6b41"/>
-  <rect x="18" y="40" width="4" height="20" fill="#5c4327"/>
-</svg>
-
-<svg class="tree" style="left: 31%; top: 38px; transform: scale(1.2);">
-  <circle cx="20" cy="30" r="15" fill="#3e6b41"/>
-  <rect x="18" y="40" width="4" height="20" fill="#5c4327"/>
-</svg>
-
-<svg class="tree" style="left: 38%; top: 36px; transform: scale(0.95);">
-  <circle cx="20" cy="30" r="15" fill="#3e6b41"/>
-  <rect x="18" y="40" width="4" height="20" fill="#5c4327"/>
-</svg>
-
-<svg class="tree" style="left: 46%; top: 30px; transform: scale(1.1);">
-  <circle cx="20" cy="30" r="15" fill="#3e6b41"/>
-  <rect x="18" y="40" width="4" height="20" fill="#5c4327"/>
-</svg>
-
-<svg class="tree" style="left: 58%; top: 35px; transform: scale(0.9);">
-  <circle cx="20" cy="30" r="15" fill="#3e6b41"/>
-  <rect x="18" y="40" width="4" height="20" fill="#5c4327"/>
-</svg>
-
-<svg class="tree" style="left: 67%; top: 28px; transform: scale(1.0);">
-  <circle cx="20" cy="30" r="15" fill="#3e6b41"/>
-  <rect x="18" y="40" width="4" height="20" fill="#5c4327"/>
-</svg>
-
-<svg class="tree" style="left: 78%; top: 40px; transform: scale(1.05);">
-  <circle cx="20" cy="30" r="15" fill="#3e6b41"/>
-  <rect x="18" y="40" width="4" height="20" fill="#5c4327"/>
-</svg>
-
-</div>
-    </section>
-    <nav class="menu">
-      <a href="gallery.html">絵</a>
-      <a href="music.html">音楽</a>
-      <a href="travel.html">旅行</a>
-      <a href="tech.html">電気工作</a>
-    </nav>
-  </main>
-</body>
+      <nav class="menu">
+        <a href="gallery.html">絵</a>
+        <a href="music.html">音楽</a>
+        <a href="travel.html">旅行</a>
+        <a href="tech.html">電気工作</a>
+      </nav>
+    </main>
+  </body>
 </html>
-

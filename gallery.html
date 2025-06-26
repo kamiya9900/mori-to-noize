@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ギャラリー | 森とノイズ</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .artworks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+      }
+
+      .work {
+        max-width: 600px;
+        width: 90%;
+      }
+
+      .work img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .work h2 {
+        margin: 0.5rem 0;
+        color: #3b5e3b;
+        font-family: "Kiwi Maru", cursive;
+      }
+    </style>
+  </head>
+<body>
+  <!-- ✅ 共通ヘッダー -->
+  <div id="header"></div>
+
+  <main class="main">
+    <h1>mimurasarujiro 展覧会</h1>
+
+    <div class="artworks">
+      <div class="work">
+        <h2>秋香る不審者</h2>
+        <img src="gallery/akikaorufushinsha.png" alt="秋香る不審者" />
+      </div>
+    </div>
+  </main>
+
+  <!-- ✅ header.html 読み込みスクリプト -->
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header").innerHTML = html;
+      });
+  </script>
+  </body>
+</html>
